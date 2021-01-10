@@ -1,5 +1,5 @@
 .custom-dark {
-  background-color: #1c1d20 !important;
+  background-color: #1c1d20;
 }
 
 .border-50 {
@@ -11,9 +11,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border-radius: 200px !important;
-  width: 200px;
-  height: 200px;
+  border-radius: 150px !important;
+  width: 150px;
+  height: 150px;
   border: 1px solid #47cff8 !important;
 }
 
@@ -35,4 +35,14 @@
 
 .border-custom {
   border: 1px solid #47cff8 !important;
+}
+
+@media (min-width: 768px) {
+  .stats-container {
+    min-height: 95vh;
+  }
+  .chart-border {
+    width: 200px;
+    height: 200px;
+  }
 }
