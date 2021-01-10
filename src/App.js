@@ -1,21 +1,19 @@
-function App() {
+import Stats from './containers/Statistics'
+import Details from './containers/Details'
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='container-fluid bg-dark'>
+      <div className='row min-vh-100'>
+        <div className='col-sm-12 col-lg-2'>
+          <Stats />
+        </div>
+        <div className='col-sm-12 col-lg-10'>
+          <Details />
+        </div>
+      </div>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
